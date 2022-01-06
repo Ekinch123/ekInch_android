@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/pad_small_v2"
+        android:weightSum="1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_profile"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:maxLines="1"
+            android:paddingStart="@dimen/pad_v_small_v2"
+            android:paddingEnd="@dimen/pad_v_small_v2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/v_large_text" />
+
+
+
+        <ImageView
+            android:id="@+id/notificationImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.03"
+            android:src="@drawable/ic_notification"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/shareImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.03"
+            android:padding="@dimen/gap_vv_small_v2"
+            android:src="@drawable/ic_share_app"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

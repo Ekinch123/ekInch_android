@@ -1,0 +1,27 @@
+
+—
+java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İµ˜ì
+˜
+java:S1186†"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºÃá²
+L
+java:S1874!"6Remove this use of "ProgressDialog"; it is deprecated.(±ÿÉ¥
+Q
+java:S2696'"6Make the enclosing method "static" or remove this set.(‹·ì‰ùÿÿÿÿ
+Q
+java:S1874'"6Remove this use of "ProgressDialog"; it is deprecated.(‹·ì‰ùÿÿÿÿ
+M
+java:S1874("2Remove this use of "setMessage"; it is deprecated.(¯ºµ®øÿÿÿÿ
+S
+java:S1874*"8Remove this use of "setProgressStyle"; it is deprecated.(ÄÅÊûùÿÿÿÿ
+Q
+java:S1874*"6Remove this use of "ProgressDialog"; it is deprecated.(ÄÅÊûùÿÿÿÿ
+P
+java:S1874*"5Remove this use of "STYLE_SPINNER"; it is deprecated.(ÄÅÊûùÿÿÿÿ
+<
+java:S1172Z"&Remove these unused method parameters.(İµ˜ì
+g
+java:S3252^"LUse static access with "android.content.Context" for "INPUT_METHOD_SERVICE".(²êõ‘ùÿÿÿÿ
+N
+java:S1068""3Remove this unused "selectedItemStr" private field.(«»¸§ùÿÿÿÿ
+S
+java:S1144Z"=Remove this unused private "onAlertDialogItemClicked" method.(İµ˜ì

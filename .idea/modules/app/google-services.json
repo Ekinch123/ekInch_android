@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "44400037286",
+    "firebase_url": "https://ek-inch.firebaseio.com",
+    "project_id": "ek-inch",
+    "storage_bucket": "ek-inch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44400037286:android:61e27f3ed47345088e5367",
+        "android_client_info": {
+          "package_name": "com.skinfotech.ekinch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44400037286-jb0i63h38jr25s3t47j6tpmgd0plc1ne.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skinfotech.ekinch",
+            "certificate_hash": "a06cb6fac97f77c3bfe38656fb3993f2439477b0"
+          }
+        },
+        {
+          "client_id": "44400037286-out01ldo1j23edogc0jvqfm4ls90881e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlr3YArq1V9LKjn3UMaOZaY83kC5Ujc5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44400037286-out01ldo1j23edogc0jvqfm4ls90881e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

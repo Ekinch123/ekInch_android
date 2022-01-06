@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/audioImageView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icon_audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questionTextView" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_question"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toStartOf="@+id/audioImageView"
+        app:layout_constraintStart_toEndOf="@+id/questionNumberTextView"
+        app:layout_constraintTop_toTopOf="@+id/audioImageView" />
+
+    <TextView
+        android:id="@+id/submitTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_medium_v2"
+        android:background="@drawable/round_green_background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_large_v2"
+        android:paddingStart="@dimen/gap_large_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:text="@string/submitted"
+        android:textColor="@color/white"
+        android:textSize="@dimen/v_small_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/audioTextView"
+        app:layout_constraintEnd_toStartOf="@id/audioImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/audioTextView"
+        app:layout_constraintTop_toTopOf="@+id/audioTextView" />
+
+    <TextView
+        android:id="@+id/audioTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_primary_background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_large_v2"
+        android:textSize="@dimen/v_small_text"
+        android:paddingStart="@dimen/gap_large_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:text="@string/record_audio"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

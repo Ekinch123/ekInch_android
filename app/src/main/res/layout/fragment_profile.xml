@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userProfileImageViewContainer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="@dimen/wallet_display_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/userProfileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/editUserProfileImageView"
+        android:layout_width="@dimen/pad_edit_start"
+        android:layout_height="@dimen/pad_edit_start"
+        android:src="@drawable/icon_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/userProfileImageViewContainer"
+        app:layout_constraintEnd_toEndOf="@+id/userProfileImageViewContainer"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageViewContainer"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileImageViewContainer"
+        app:tint="@color/colorPrimaryDark"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/pad_small_v2"
+        android:weightSum="1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_profile"
+            app:tint="@color/black"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:maxLines="1"
+            android:paddingStart="@dimen/pad_v_small_v2"
+            android:paddingEnd="@dimen/pad_v_small_v2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/v_large_text" />
+
+        <ImageView
+            android:id="@+id/notificationImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.05"
+            android:src="@drawable/ic_notification"
+            app:tint="@color/colorPrimaryDark"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/shareImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.05"
+            android:padding="@dimen/gap_vv_small_v2"
+            android:src="@drawable/ic_share_app"
+            app:tint="@color/colorPrimaryDark"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/aadharTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:background="@drawable/white_curve_background"
+        android:drawableStart="@drawable/icon_aadhar"
+        android:drawablePadding="@dimen/gap_medium_v2"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/adhaar"
+        android:inputType="number"
+        android:maxLength="@integer/aadhar_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobileTextView"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/changePasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pad_small_v2"
+        android:background="@drawable/round_primary_background"
+        android:drawableStart="@drawable/ic_rewards"
+        android:drawablePadding="@dimen/gap_small_v2"
+        android:maxLines="1"
+        android:paddingStart="@dimen/gap_mlarge_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_mlarge_v2"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:text="@string/rewards"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@id/updateProfileTextView"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/getCerificatTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_primary_background"
+        android:drawablePadding="@dimen/gap_small_v2"
+        android:maxLines="1"
+        android:paddingStart="@dimen/gap_mlarge_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_mlarge_v2"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:text="@string/certificate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintBottom_toBottomOf="@+id/changePasswordTextView"
+        app:layout_constraintEnd_toStartOf="@+id/logoutTextView"
+        app:layout_constraintStart_toEndOf="@+id/changePasswordTextView"
+        app:layout_constraintTop_toTopOf="@+id/changePasswordTextView" />
+
+    <TextView
+        android:id="@+id/logoutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_primary_background"
+        android:drawableStart="@drawable/ic_logout"
+        android:drawablePadding="@dimen/gap_small_v2"
+        android:maxLines="1"
+        android:paddingStart="@dimen/gap_mlarge_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_mlarge_v2"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintBottom_toBottomOf="@+id/changePasswordTextView"
+        app:layout_constraintEnd_toEndOf="@+id/nameTextView"
+        app:layout_constraintTop_toTopOf="@+id/changePasswordTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/mobileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:background="@drawable/white_curve_background"
+        android:drawableStart="@drawable/ic_mobile"
+        android:drawablePadding="@dimen/gap_large_v2"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:maxLength="@integer/mobile_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userProfileImageViewContainer"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:background="@drawable/white_curve_background"
+        android:drawableStart="@drawable/ic_user_grey"
+        android:drawablePadding="@dimen/gap_large_v2"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/user_name_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aadharTextView"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/organizationET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:background="@drawable/white_curve_background"
+        android:drawableStart="@drawable/ic_organization"
+        android:drawablePadding="@dimen/gap_large_v2"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/organization"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/user_name_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/professionET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:background="@drawable/white_curve_background"
+        android:drawableStart="@drawable/ic_profession"
+        android:drawableEnd="@drawable/ic_drop_down_24"
+        android:drawablePadding="@dimen/gap_large_v2"
+        android:elevation="@dimen/elevation_val"
+        android:gravity="center_vertical"
+        android:hint="@string/profession"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/organizationET" />
+
+    <EditText
+        android:id="@+id/locationET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:background="@drawable/white_curve_background"
+        android:drawableStart="@drawable/ic__location"
+        android:drawablePadding="@dimen/gap_large_v2"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/location"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/user_name_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professionET"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/locationSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/white_curve_background"
+        android:drawableEnd="@drawable/ic_drop_down_24"
+        android:elevation="@dimen/elevation_val"
+        android:gravity="center_vertical"
+        android:hint="@string/please_select_location"
+        android:paddingStart="@dimen/gap_large_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_large_v2"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:textSize="@dimen/normal_text"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/organizationET"
+        app:layout_constraintStart_toStartOf="@+id/organizationET"
+        app:layout_constraintTop_toBottomOf="@+id/organizationET"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/updateProfileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_green_background"
+        android:paddingStart="@dimen/gap_vvlarge_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_vvlarge_v2"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/locationET"
+        app:layout_constraintStart_toStartOf="@+id/locationET"
+        app:layout_constraintTop_toBottomOf="@+id/locationET" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bottom_common_navigation_view" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

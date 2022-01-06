@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E65100</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorAccent">#E65100</color>
+    <color name="white">#FFF</color>
+    <color name="background">#E3E0E0</color>
+    <color name="black">#000</color>
+    <color name="success_green">#66BB6A</color>
+    <color name="nav_icon_color">#D8D8D8</color>
+    <color name="nav_text_color">#6D6D6D</color>
+    <color name="tint_grey">#F6F6F6</color>
+    <color name="default_bg">#F8F8F8</color>
+    <color name="category_inactive_text">#B8B8B8</color>
+    <color name="buttonGradientOne">#E18F37</color>
+    <color name="buttonGradientTwo">#983400</color>
+    <color name="profileToolBarTopColor">#FECB38</color>
+    <color name="red">#FF3B3B</color>
+    <color name="green_otp_bg">#87CF32</color>
+    <color name="vw_BgItem">#353535</color>
+    <color name="vw_ShadowItem">#94333232</color>
+    <color name="fugu_theme_color_primary_pressed">#99627de3</color>
+
+</resources>

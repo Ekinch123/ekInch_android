@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/child_separator.xml" value="0.31574074074074077" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/hippo_directory_shade_bg.xml" value="0.2109375" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/hippo_ic_arrow_back.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/hippo_ic_arrow_back_white.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/hippo_ic_folder_open.xml" value="0.2109375" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/hippo_ic_photo_icon.xml" value="0.2109375" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/ic__location.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/ic_live_video.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/ic_mobile.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/ic_organization.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/ic_presentation_learning.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/ic_profession.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/round_accent_background.xml" value="0.30925925925925923" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/round_green_background.xml" value="0.30925925925925923" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/spinner_bg.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/vw_divider_rv.xml" value="0.2109375" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/vw_divider_rv_file.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/vw_selector_cbx.xml" value="0.2109375" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/drawable/white_curve_background.xml" value="0.36666666666666664" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/activity_video_view.xml" value="0.32518115942028986" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/activity_web_view.xml" value="0.34646739130434784" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/bottom_common_navigation_view.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/certificate_item.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/common_top_toolbar_layout.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_generate_certificate.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_home_screen.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_liberary.xml" value="0.34646739130434784" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_live_video.xml" value="0.19746376811594202" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_login.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_mark_sheet.xml" value="0.67" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_notifications.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_sign_up.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_splash.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_upload.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fragment_video_view.xml" value="0.33061594202898553" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/fugu_layout_toolbar_left.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/list_group.xml" value="0.34646739130434784" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/list_group_lib.xml" value="0.33605072463768115" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/list_item.xml" value="0.34646739130434784" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/list_item_child_catagory_liberary.xml" value="0.25" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/mark_sheet_item.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/topic_item.xml" value="0.34646739130434784" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/vw_activity_image_pick.xml" value="0.35052083333333334" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/vw_image_pick.xml" value="0.19479166666666667" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/vw_layout_folder_list.xml" value="0.19479166666666667" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/vw_layout_item_folder_list.xml" value="0.19479166666666667" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/vw_layout_item_image_pick.xml" value="0.19479166666666667" />
+        <entry key="..\:/androidStudio/Ekinch_App/app/src/main/res/layout/vw_layout_item_video_pick.xml" value="0.19479166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

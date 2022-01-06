@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/gap_extra_large"
+        android:background="@drawable/white_curve_background"
+        android:drawablePadding="@dimen/gap_medium_v2"
+        android:drawableStart="@drawable/ic_user_grey"
+        android:elevation="@dimen/elevation_val"
+        android:maxLength="@integer/user_name_length"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/mobileEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:background="@drawable/white_curve_background"
+        android:drawablePadding="@dimen/gap_medium_v2"
+        android:drawableStart="@drawable/ic_mobile"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:maxLength="@integer/mobile_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:background="@drawable/white_curve_background"
+        android:drawablePadding="@dimen/gap_medium_v2"
+        android:drawableStart="@drawable/ic_password"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="@integer/password_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobileEditText"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/aadharEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap_extra_large"
+        android:layout_marginStart="@dimen/gap_extra_large"
+        android:layout_marginTop="@dimen/pad_vv_small_v2"
+        android:background="@drawable/white_curve_background"
+        android:drawablePadding="@dimen/gap_medium_v2"
+        android:drawableStart="@drawable/icon_aadhar"
+        android:elevation="@dimen/elevation_val"
+        android:hint="@string/adhaar"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="@integer/aadhar_length"
+        android:maxLines="1"
+        android:padding="@dimen/pad_small_v2"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/margin_above_120"
+        android:layout_height="@dimen/margin_above_120"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_small_v2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="@dimen/pad_small_v2"
+        android:text="@string/let_s_get_started"
+        android:textColor="@color/black"
+        android:textSize="@dimen/extra_large_text"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/alreadyHaveAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/nav_text_color"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/aadharEditText"
+        app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/loginHereTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_vv_small_v2"
+        android:text="@string/login_here"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintBottom_toBottomOf="@id/alreadyHaveAccountTextView"
+        app:layout_constraintEnd_toStartOf="@id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/alreadyHaveAccountTextView"
+        app:layout_constraintTop_toTopOf="@id/alreadyHaveAccountTextView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/shape_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aadharEditText"
+        app:layout_constraintVertical_bias="0.8">
+
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/pad_small_v2"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

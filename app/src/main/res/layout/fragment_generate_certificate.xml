@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/generateCertificateLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_image_standard"
+        android:background="@drawable/shape_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeScreenTopImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/circle_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/homeScreenTopImageView"
+        app:layout_constraintEnd_toEndOf="@+id/homeScreenTopImageView"
+        app:layout_constraintStart_toStartOf="@+id/homeScreenTopImageView"
+        app:layout_constraintTop_toTopOf="@+id/homeScreenTopImageView"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/courseNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="@dimen/pad_small_v2"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/extra_large_text"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/homeScreenTopImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/totalMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/pad_v_small_v2"
+        android:text="@string/marks_obtained"
+        android:textColor="@color/nav_text_color"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeScreenTopImageView"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/shareResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/pad_small_v2"
+        android:drawableStart="@drawable/ic_share_mark_sheet"
+        android:gravity="center"
+        android:padding="@dimen/pad_v_small_v2"
+        android:text="@string/share"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/statusTextView"
+        app:layout_constraintStart_toStartOf="@+id/statusTextView"
+        app:layout_constraintTop_toBottomOf="@+id/statusTextView"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/marksObtained"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="@dimen/pad_v_small_v2"
+        android:text="@string/total_marks"
+        android:textColor="@color/nav_text_color"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintStart_toStartOf="@+id/totalMarks"
+        app:layout_constraintTop_toBottomOf="@+id/totalMarks" />
+
+    <TextView
+        android:id="@+id/totalMarksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:padding="@dimen/pad_v_small_v2"
+        android:text="@string/total_marks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/totalMarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/totalMarks" />
+
+    <TextView
+        android:id="@+id/marksObtainedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:padding="@dimen/pad_v_small_v2"
+        android:text="@string/total_marks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/marksObtained"
+        app:layout_constraintEnd_toEndOf="@+id/totalMarksTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/totalMarksTextView" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_curve_stroke"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:padding="@dimen/pad_small_v2"
+        android:text="@string/marks_obtained"
+        android:textColor="@color/red"
+        android:textSize="@dimen/extra_large_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marksObtained"
+        app:layout_constraintVertical_bias="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+
+Q	java:S110"<This class has 9 parents which is greater than 5 authorized.(•á‹Â
+f
+java:S1854†"JRemove this useless assignment to local variable "isAllPermissionAllowed".(ªÅÇ•ıÿÿÿÿ
+R
+java:S1481„";Remove this unused "isAllPermissionAllowed" local variable.(¢‹×Î
+H
+java:S1874u"-Remove this use of "speak"; it is deprecated.(Û´â½ùÿÿÿÿ

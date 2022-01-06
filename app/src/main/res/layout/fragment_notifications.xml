@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/pad_small_v2"
+        android:weightSum="1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_profile"
+            android:tint="@color/black"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/pad_v_small_v2"
+            android:paddingStart="@dimen/pad_v_small_v2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/v_large_text" />
+
+        <ImageView
+            android:id="@+id/notificationImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.05"
+            android:tint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_notification"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/shareImageView"
+            android:layout_width="@dimen/size_icon_default"
+            android:layout_height="@dimen/size_icon_default"
+            android:layout_weight="0.05"
+            android:padding="@dimen/gap_vv_small_v2"
+            android:tint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_share_app"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomNavigationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bottom_common_navigation_view" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_fixed"
+        android:text="@string/notifications"
+        android:textColor="@color/black"
+        android:textSize="@dimen/extra_large_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notificationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notificationTitle"
+        tools:listitem="@layout/notification_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

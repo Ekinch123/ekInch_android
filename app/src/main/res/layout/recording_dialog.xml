@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="350dp">
+
+    <Chronometer
+        android:id="@+id/record_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_small_v2"
+        android:gravity="center"
+        android:padding="@dimen/pad_small_v2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/extreme_large_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="@dimen/fingerprint_height"
+        android:layout_height="@dimen/fingerprint_height"
+        android:layout_marginTop="@dimen/pad_small_v2"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:src="@drawable/logo"
+        android:padding="@dimen/pad_small_v2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/extreme_large_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/audioImageView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:src="@drawable/icon_audio"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questionTextView"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/closeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/gap_v_small_v2"
+        android:drawableStart="@drawable/ic_close"
+        android:padding="@dimen/pad_v_small_v2"
+        android:text="@string/close"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/record_timer"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:minWidth="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questionTextView" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/sample_question"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text_1"
+        app:layout_constraintEnd_toEndOf="@+id/closeDialog"
+        app:layout_constraintStart_toEndOf="@+id/questionNumberTextView"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <TextView
+        android:id="@+id/submitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_medium_v2"
+        android:background="@drawable/round_green_background"
+        android:gravity="center"
+        android:minWidth="120dp"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_large_v2"
+        android:paddingStart="@dimen/gap_large_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/vv_small_text"
+        app:layout_constraintBottom_toBottomOf="@id/audioTextView"
+        app:layout_constraintEnd_toEndOf="@+id/questionTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/audioTextView"
+        app:layout_constraintTop_toTopOf="@id/audioTextView" />
+
+    <TextView
+        android:id="@+id/audioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_large_v2"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_primary_background"
+        android:gravity="center"
+        android:minWidth="120dp"
+        android:paddingBottom="@dimen/pin_label_margin"
+        android:paddingEnd="@dimen/gap_large_v2"
+        android:paddingStart="@dimen/gap_large_v2"
+        android:paddingTop="@dimen/pin_label_margin"
+        android:text="@string/record_audio"
+        android:textColor="@color/white"
+        android:textSize="@dimen/vv_small_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
